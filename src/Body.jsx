@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css';
 
 class Body extends Component {
-    state = {  }
     render() {
         return (
             <div className="Body">
-                {this.props.projects}
+                <ScrollAnimation animateIn="fadeIn" >
+                    {this.props.projects}
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="fadeIn" >
+                    {this.props.about}
+                </ScrollAnimation>
             </div>
         );
     }

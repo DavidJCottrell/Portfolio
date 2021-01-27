@@ -10,6 +10,7 @@ import Wave from './Wave';
 import Body from "./Body";
 import Projects from "./Projects";
 import About from "./About";
+import Skills from "./Skills";
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
 			<React.Fragment>
 				
 				<header>
-					<img src={ profileImg } alt="" id="profileImg" />
+					{/* <img src={ profileImg } alt="" id="profileImg" /> */}
 					<h1>David Cottrell</h1>
 					<p>Student at Birmingham City University</p>
 				</header>
@@ -30,13 +31,13 @@ class App extends Component {
 
 				<Body
 
-					projects={<Projects />}
-					about={<About />}
+					projects = {<Projects />}
+					about = {<About />}
+					skills = { <Skills /> }
 				
 				/>
 
 				<br/><br/><br/><br/><br/>
-
 			</React.Fragment>
 		);
 	};

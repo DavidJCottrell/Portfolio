@@ -1,97 +1,70 @@
 import { Component } from "react";
 import * as React from 'react'
-
-import { Doughnut } from 'react-chartjs-2';
-import * as deferred from "chartjs-plugin-deferred";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Projects extends Component {
 
     render() {
-        this.data = {
-            datasets: [{
-                data: [
-                    15,
-                    13,
-                    8,
-                    6
-                ],
-                backgroundColor: [
-                    "#FF6384",
-                    "#4BC0C0",
-                    "#FFCE56",
-                    "#E7E9ED"
-                ],
-                borderColor: "#000000",
-                label: 'My dataset' 
-            }],
-            labels: [
-                "JavaScript",
-                "Java",
-                "C++",
-                "Python"
-            ]
-        };
-
-        this.options = {
-            plugins: {
-                deferred: {
-                  xOffset: 150,   
-                  yOffset: '50%', 
-                  delay: 500 
-                }
-            }
-        }
-
         return (
-            <div className="Projects">
-                <h1>Projects</h1>
+            <div className="Section" id="Projects">
                 
-                <br/><hr/><br/>
-                
-                <h3>Machine Learning</h3>
-                <ul>
-                    <li>Training a Neural Network to identify X</li>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas nihil repellendus, rerum, ipsam repellat fugit.</li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
-                </ul>
+                <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}  >
+                    <h1>Projects</h1>
+                </ScrollAnimation>
 
-                <h3>Web Development</h3>
-                <ul>
-                    <li>Wribbenhall School</li>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas nihil repellendus, rerum, ipsam repellat fugit.</li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
+                <ScrollAnimation animateIn="fadeInRight" delay={200} animateOnce={true} >
+                    <br/><hr/><br/>
+                </ScrollAnimation>
 
-                    <li>Bewdley Youth Cafe</li>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas nihil repellendus, rerum, ipsam repellat fugit.</li>
-                    </ul>
-                </ul>
-                
-                <h3>Games</h3>
-                <ul>
-                    <li>Java 2D Game and Engine</li>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas nihil repellendus, rerum, ipsam repellat fugit.</li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
+                <ScrollAnimation animateIn="fadeInRight" delay={400} animateOnce={true} >
+                    <p style={{textAlign: "justify"}}>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Temporibus asperiores aliquam praesentium possimus eveniet mollitia repudiandae 
+                    </p>
+                </ScrollAnimation>
 
-                    <li>Conaway's Game of Life</li>
-                    <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas nihil repellendus, rerum, ipsam repellat fugit.</li>
-                        <li><a href="">GitHub</a></li>
-                    </ul>
-                </ul>
+                <br/>
 
-                <Doughnut
-                
-                    data = {this.data}
-                    options = {this.options}
-                />
 
+                <div className="Content">
+                    <ScrollAnimation animateIn="fadeInRight" delay={600} animateOnce={true} >
+                        <div className="Project">
+                            <div class="hexagon hexagon1">
+                                <div class="hexagon-in1">
+                                    <div class="hexagon-in2"></div>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>Machine Learning</h3>
+                        </div>
+                    </ScrollAnimation>
+
+
+                    <ScrollAnimation animateIn="fadeInRight" delay={800} animateOnce={true} >
+                        <div className="Project">
+                            <div class="hexagon hexagon1">
+                                <div class="hexagon-in1">
+                                    <div class="hexagon-in2"></div>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>Web Development</h3>
+                        </div>
+                    </ScrollAnimation>
+
+
+                    <ScrollAnimation animateIn="fadeInRight" delay={1000} animateOnce={true} >
+                        <div className="Project">
+                            <div class="hexagon hexagon1">
+                                <div class="hexagon-in1">
+                                    <div class="hexagon-in2"></div>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>Games</h3>                            
+                        </div>
+                    </ScrollAnimation>
+                </div>
             </div>
         );
     }

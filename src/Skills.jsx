@@ -1,15 +1,16 @@
-import { Component } from "react";
-import * as React from 'react'
+import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Chart from './Chart';
 
 
-class About extends Component {
+class Skills extends Component {
     state = {  }
     render() {
         return (
-            <div className="Section" id="About">
+            <div className="Section" id="Skills">
+                
                 <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}  >
-                    <h1>About Me</h1>
+                    <h1>My Skills</h1>
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="fadeInRight" delay={200} animateOnce={true} >
@@ -21,9 +22,14 @@ class About extends Component {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
                     </p>
                 </ScrollAnimation>
+
+                <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={600} >
+                    <Chart />
+                </ScrollAnimation>
+
             </div>
         );
     }
 }
 
-export default About;
+export default Skills;

@@ -27,7 +27,7 @@ class Skills extends Component {
 
                 <ScrollAnimation animateIn="fadeInLeft" delay={400} animateOnce={true} >
                     <p style={{textAlign: "justify"}}>
-                        Experiance with
+                        Experianced with -
                     </p>
                 </ScrollAnimation>
 

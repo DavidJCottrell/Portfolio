@@ -21,8 +21,7 @@ class About extends Component {
                     <img src={ profileImg } alt="" id="profileImg" />
                     <br/>
                     <p style={{textAlign: "justify"}}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
+                        Current second year student at Birmingham City University, looking to ex
                     </p>
                 </ScrollAnimation>
             </div>

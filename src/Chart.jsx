@@ -10,10 +10,10 @@ class Chart extends Component {
             datasets: [{
                 data: [
                     15,
-                    13,
+                    14,
+                    11,
                     8,
                     7,
-                    6,
                     5,
                     2
                 ],
@@ -31,11 +31,11 @@ class Chart extends Component {
             }],
             labels: [
                 "JavaScript",
+                "CSS",
                 "Java",
+                "PHP",
                 "Python",
                 "C/C++",
-                "CSS",
-                "PHP",
                 "F#"
             ]
         };

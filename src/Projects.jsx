@@ -1,9 +1,47 @@
 import { Component } from "react";
 import * as React from 'react'
 
+import { Doughnut } from 'react-chartjs-2';
+import * as deferred from "chartjs-plugin-deferred";
+
 class Projects extends Component {
-    state = {  }
+
     render() {
+        this.data = {
+            datasets: [{
+                data: [
+                    15,
+                    13,
+                    8,
+                    6
+                ],
+                backgroundColor: [
+                    "#FF6384",
+                    "#4BC0C0",
+                    "#FFCE56",
+                    "#E7E9ED"
+                ],
+                borderColor: "#000000",
+                label: 'My dataset' 
+            }],
+            labels: [
+                "JavaScript",
+                "Java",
+                "C++",
+                "Python"
+            ]
+        };
+
+        this.options = {
+            plugins: {
+                deferred: {
+                  xOffset: 150,   
+                  yOffset: '50%', 
+                  delay: 500 
+                }
+            }
+        }
+
         return (
             <div className="Projects">
                 <h1>Projects</h1>
@@ -19,7 +57,7 @@ class Projects extends Component {
                     </ul>
                 </ul>
 
-                <h3>Web</h3>
+                <h3>Web Development</h3>
                 <ul>
                     <li>Wribbenhall School</li>
                     <ul>
@@ -48,6 +86,11 @@ class Projects extends Component {
                     </ul>
                 </ul>
 
+                <Doughnut
+                
+                    data = {this.data}
+                    options = {this.options}
+                />
 
             </div>
         );

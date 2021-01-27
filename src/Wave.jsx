@@ -5,10 +5,12 @@ const THREE = window.THREE;
 class Wave extends Component {
     componentDidMount() {
         const SEPARATION = 75, AMOUNTX = 100, AMOUNTY = 100;
-      let camera, scene, renderer;
-      let particles, particle, count = 0;
-      let offsetX = 0, offsetY = -500;
-      let windowOffset = 0;
+        let camera, scene, renderer;
+        let particles, particle, count = 0;
+        let offsetX = 0, offsetY = -500;
+        let windowOffset = 0;
+        let windowHalfX = window.innerWidth / 2;
+        let windowHalfY = window.innerHeight / 2;
       
       if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
           window.addEventListener( 'resize', onWindowResize, false );
@@ -45,10 +47,33 @@ class Wave extends Component {
           }
           renderer = new THREE.CanvasRenderer();
 
+          document.addEventListener( 'scroll', onScroll );
+          document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+          document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
           renderer.setSize(window.innerWidth - windowOffset, window.innerHeight);
-
-
       }
+
+      function onDocumentTouchStart(event) {
+        // if (event.touches.length === 1) {
+        //   event.preventDefault();
+        //   offsetX = event.touches[ 0 ].pageX - windowHalfX;
+        // }
+      }
+      
+      function onDocumentTouchMove( event ) {
+        if (event.touches.length === 1) {
+          event.preventDefault();
+          offsetX = event.touches[ 0 ].pageX;
+        }
+      }
+
+        function onScroll(){
+            
+            if(window.scrollY < 1000){
+                offsetY = -(window.scrollY+500);
+            }
+        }
 
       function onWindowResize() {
           camera.aspect = window.innerWidth / window.innerHeight;

@@ -23,6 +23,8 @@ class Skills extends Component {
                     </p>
                 </ScrollAnimation>
 
+                <br/>
+
                 <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={600} >
                     <Chart />
                 </ScrollAnimation>

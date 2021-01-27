@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Doughnut } from 'react-chartjs-2';
-import * as deferred from "chartjs-plugin-deferred";
+import "chartjs-plugin-deferred";
 
 class Chart extends Component {
     render() {
@@ -38,13 +38,16 @@ class Chart extends Component {
                   yOffset: '50%', 
                   delay: 1100 
                 }
-            }
+            },
+            maintainAspectRatio: false
         }
 
         return (
             <Doughnut
                 data = {this.data}
                 options = {this.options}
+                width={200}
+                height={250}
             />
         );
     }

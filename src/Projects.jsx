@@ -29,9 +29,11 @@ class Projects extends Component {
                 <div className="Content">
                     <ScrollAnimation animateIn="fadeInRight" delay={600} animateOnce={true} >
                         <div className="Project">
-                            <div class="hexagon hexagon1">
-                                <div class="hexagon-in1">
-                                    <div class="hexagon-in2"></div>
+                            <div className="hexagon hexagon1">
+                                <div className="hexagon-in1">
+                                    <div className="hexagon-in2">
+                                        <p>ML</p>
+                                    </div>
                                 </div>
                             </div>
                             <br/>
@@ -42,9 +44,11 @@ class Projects extends Component {
 
                     <ScrollAnimation animateIn="fadeInRight" delay={800} animateOnce={true} >
                         <div className="Project">
-                            <div class="hexagon hexagon1">
-                                <div class="hexagon-in1">
-                                    <div class="hexagon-in2"></div>
+                            <div className="hexagon hexagon1">
+                                <div className="hexagon-in1">
+                                    <div className="hexagon-in2" >
+                                        <p>WD</p>
+                                    </div>
                                 </div>
                             </div>
                             <br/>
@@ -55,15 +59,33 @@ class Projects extends Component {
 
                     <ScrollAnimation animateIn="fadeInRight" delay={1000} animateOnce={true} >
                         <div className="Project">
-                            <div class="hexagon hexagon1">
-                                <div class="hexagon-in1">
-                                    <div class="hexagon-in2"></div>
+                            <div className="hexagon hexagon1">
+                                <div className="hexagon-in1">
+                                    <div className="hexagon-in2" >
+                                        <p>C++</p>
+                                    </div>
                                 </div>
                             </div>
                             <br/>
-                            <h3>Games</h3>                            
+                            <h3>C++ Projects</h3>                            
                         </div>
                     </ScrollAnimation>
+
+                    <ScrollAnimation animateIn="fadeInRight" delay={1000} animateOnce={true} >
+                        <div className="Project">
+                            <div className="hexagon hexagon1">
+                                <div className="hexagon-in1">
+                                    <div className="hexagon-in2">
+                                        <p>...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <h3>Other Projects</h3>                            
+                        </div>
+                    </ScrollAnimation>
+
+
                 </div>
             </div>
         );

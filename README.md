@@ -1,6 +1,6 @@
 # David Cottrell Portfolio Application
 
-![Portfolio](./cover.png)
+![Portfolio](./Cover.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

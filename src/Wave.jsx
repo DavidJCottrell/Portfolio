@@ -45,10 +45,17 @@ class Wave extends Component {
           }
           renderer = new THREE.CanvasRenderer();
 
+          document.addEventListener( 'scroll', onScroll );
+
           renderer.setSize(window.innerWidth - windowOffset, window.innerHeight);
-
-
       }
+
+        function onScroll(){
+            
+            if(window.scrollY < 1000){
+                offsetY = -(window.scrollY+500);
+            }
+        }
 
       function onWindowResize() {
           camera.aspect = window.innerWidth / window.innerHeight;

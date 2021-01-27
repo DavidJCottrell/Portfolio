@@ -12,13 +12,19 @@ class Chart extends Component {
                     15,
                     13,
                     8,
-                    6
+                    7,
+                    6,
+                    5,
+                    2
                 ],
                 backgroundColor: [
                     "#FF6384",
                     "#4BC0C0",
                     "#FFCE56",
-                    "#E7E9ED"
+                    "#d8dde8",
+                    "#72ff56",
+                    "#ff56ab",
+                    "#ff0000"
                 ],
                 borderColor: "#000000",
                 label: 'My dataset' 
@@ -26,8 +32,11 @@ class Chart extends Component {
             labels: [
                 "JavaScript",
                 "Java",
-                "C++",
-                "Python"
+                "Python",
+                "C/C++",
+                "CSS",
+                "PHP",
+                "F#"
             ]
         };
     
@@ -39,7 +48,14 @@ class Chart extends Component {
                   delay: 1100 
                 }
             },
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            tooltips:{
+                callbacks: {
+                    label: function(tooltipItem, data) {
+                        return data['labels'][tooltipItem["index"]];                    
+                    }
+                }
+            }
         }
 
         return (

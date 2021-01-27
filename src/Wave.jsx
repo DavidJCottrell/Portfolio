@@ -4,13 +4,13 @@ const THREE = window.THREE;
 
 class Wave extends Component {
     componentDidMount() {
-        const SEPARATION = 75, AMOUNTX = 100, AMOUNTY = 100;
+        const SEPARATION = 80, AMOUNTX = 115, AMOUNTY = 100; //80 115 100
         let camera, scene, renderer;
         let particles, particle, count = 0;
         let offsetX = 0, offsetY = -500;
         let windowOffset = 0;
-        let windowHalfX = window.innerWidth / 2;
-        let windowHalfY = window.innerHeight / 2;
+        // let windowHalfX = window.innerWidth / 2;
+        // let windowHalfY = window.innerHeight / 2;
       
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             window.addEventListener( 'resize', onWindowResize, false );
@@ -19,9 +19,9 @@ class Wave extends Component {
 
         function init() {
             camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 2000 );
-            camera.position.z = 1000;
+            camera.position.z = 1000; //1000
             scene = new THREE.Scene();
-            particles = new Array();
+            particles = [];
             var PI2 = Math.PI * 2;
             var geometry = new THREE.Geometry();
             var material = new THREE.SpriteCanvasMaterial({
@@ -54,19 +54,19 @@ class Wave extends Component {
             renderer.setSize(window.innerWidth - windowOffset, window.innerHeight);
         }
 
-        function onDocumentTouchStart(event) {
-            if (event.touches.length === 1) {
-              event.preventDefault();
-              offsetX = event.touches[ 0 ].pageX - windowHalfX;
-            }
-        }
+        // function onDocumentTouchStart(event) {
+        //     if (event.touches.length === 1) {
+        //       event.preventDefault();
+        //       offsetX = event.touches[ 0 ].pageX - windowHalfX;
+        //     }
+        // }
       
-        function onDocumentTouchMove( event ) {
-            if (event.touches.length === 1) {
-            event.preventDefault();
-            offsetX = event.touches[ 0 ].pageX;
-            }
-        }
+        // function onDocumentTouchMove( event ) {
+        //     if (event.touches.length === 1) {
+        //     event.preventDefault();
+        //     offsetX = event.touches[ 0 ].pageX;
+        //     }
+        // }
 
         function onScroll(){
             if(window.scrollY < 1000){

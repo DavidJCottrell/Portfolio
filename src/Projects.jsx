@@ -19,7 +19,7 @@ class Projects extends Component {
                     </ul>
                 </ul>
 
-                <h3>Web</h3>
+                <h3>Web Development</h3>
                 <ul>
                     <li>Wribbenhall School</li>
                     <ul>

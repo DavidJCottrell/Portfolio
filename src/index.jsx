@@ -9,6 +9,7 @@ import Body from "./Body";
 import Projects from "./Projects";
 import About from "./About";
 import Skills from "./Skills";
+import Footer from "./Footer";
 
 
 class App extends Component {
@@ -30,7 +31,9 @@ class App extends Component {
 
 					projects = {<Projects />}
 					about = {<About />}
-					skills = { <Skills /> }
+                    skills = { <Skills /> }
+                    
+                    footer = { <Footer /> }
 				
 				/>
 

@@ -4,6 +4,17 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 class Projects extends Component {
 
+    growDiv() {
+        var growDiv = document.getElementById('grow');
+        if (growDiv.clientHeight) {
+            growDiv.style.height = 0;
+        } else {
+            var wrapper = document.querySelector('.measuringWrapper');
+            growDiv.style.height = wrapper.clientHeight + "px";
+        }
+        document.getElementById("more-button").value=document.getElementById("more-button").value=='Read more'?'Read less':'Read more';
+    }
+
     render() {
         return (
             <div className="Section" id="Projects">
@@ -28,7 +39,7 @@ class Projects extends Component {
 
                 <div className="Content">
                     <ScrollAnimation animateIn="fadeInRight" delay={600} animateOnce={true} >
-                        <div className="Project">
+                        <div className="Project" onClick={this.growDiv} >
                             <div className="hexagon hexagon1">
                                 <div className="hexagon-in1">
                                     <div className="hexagon-in2">
@@ -87,6 +98,19 @@ class Projects extends Component {
 
 
                 </div>
+
+                <div id='grow'>
+                    <div className='measuringWrapper'>
+                        <div className="text">
+                            Here is some more text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea dictumst. 
+                            In ac tempor quam. Vestibulum eleifend vehicula ligula, et cursus nisl gravida sit amet. 
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         );
     }

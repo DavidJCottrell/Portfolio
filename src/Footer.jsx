@@ -8,7 +8,7 @@ class Footer extends Component {
         return ( 
             <div className="Section" id="Footer">
                 <div className="icon">
-                    <img src={ GitHubIcon } alt="" />
+                    <img src={ GitHubIcon } alt="" id="git" />
                 </div>
                 <div className="icon">
                     <img src={ LinkedInIcon } alt="" />

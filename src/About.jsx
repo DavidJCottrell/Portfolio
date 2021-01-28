@@ -21,7 +21,12 @@ class About extends Component {
                     <img src={ profileImg } alt="" id="profileImg" />
                     <br/>
                     <p style={{textAlign: "justify"}}>
-                        Current second year student at Birmingham City University, looking to ex
+                        I'm a second year Computer Science student at Birmingham City University, with a passion for learning new skills and technologies.
+                        I am constantly experimenting with new languages and frameworks, as well as similar fields such as Electronics, with the aim of broadening my skill set.                  
+                    </p>
+                    <br/>
+                    <p style={{textAlign: "justify"}}>
+                        I primarily enjoy building web applications in my free time as they allow me to combine my creativity and techincal skills within the same project.
                     </p>
                 </ScrollAnimation>
             </div>

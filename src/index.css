@@ -12,7 +12,7 @@ body,html{
 }
 
 p{
-	font-size: calc(18px + 0.2vw);
+	font-size: calc(12px + 0.3vw);
 }
 
 header{
@@ -50,7 +50,7 @@ header p {
 
 div#Projects.Section{
 	width: 80%;
-	max-width: 800px;
+	max-width: 850px;
 }
 
 div#About.Section{
@@ -91,9 +91,21 @@ div#Skills.Section{
         -ms-transform: rotate(120deg);
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
-    width: 200px;
-    height: 100px;
+	
+	width: 200px;
+	height: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+	.hexagon {
+		width: 125px;
+		height: 75px;
+	}
+	.hexagon-in2 p {
+		font-size: 23px !important;
+	}
+}
+
 .hexagon-in1 {
     overflow: hidden;
     width: 100%;
@@ -136,6 +148,11 @@ div#Skills.Section{
 	cursor: pointer;
 	margin-top: 25px;
 	margin-bottom: 25px;
+	padding: 5px;
+}
+
+.Project h3 {
+	font-size: calc(12px + 0.4vw);
 }
 
 #grow {

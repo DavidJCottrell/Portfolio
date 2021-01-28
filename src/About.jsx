@@ -22,7 +22,12 @@ class About extends Component {
                     <br/>
                     <p style={{textAlign: "justify"}}>
                         I'm a second year Computer Science student at Birmingham City University, with a passion for learning new skills and technologies.
-                        I am constantly experimenting with new languages and frameworks, as well as similar fields such as Electronics, with the aim of broadening my skill set.                  
+                        
+                        I am constantly experimenting with new languages and frameworks 
+                        
+
+                        as well as similar fields such as Electronics, with the aim of broadening my skill set.
+
                     </p>
                     <br/>
                     <p style={{textAlign: "justify"}}>
@@ -33,5 +38,16 @@ class About extends Component {
         );
     }
 }
+
+
+/*
+
+
+Student at BCU
+Passion for learning new tech and skills
+Experiment with new languages and frameworks
+
+
+*/
 
 export default About;

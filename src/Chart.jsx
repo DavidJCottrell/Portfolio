@@ -15,6 +15,7 @@ class Chart extends Component {
                     8,
                     7,
                     5,
+                    3,
                     2
                 ],
                 backgroundColor: [
@@ -24,7 +25,8 @@ class Chart extends Component {
                     "#d8dde8",
                     "#72ff56",
                     "#ff56ab",
-                    "#ff0000"
+                    "#ff0000",
+                    "#0a68ff"
                 ],
                 borderColor: "#000000",
                 label: 'My dataset' 
@@ -36,6 +38,7 @@ class Chart extends Component {
                 "PHP",
                 "Python",
                 "C/C++",
+                "Swift",
                 "F#"
             ]
         };

@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: rgb(153, 153, 153);
+	font-family: 'IBM Plex Serif', serif;
+}
+
+body, html{
+	background-color: black;
+  	height: 100%;
+	width: 100%;
+}
+
+
+p {
+	font-size: calc(12px + 0.3vw);
+}
+
+hr {
+	border-color: rgb(79, 78, 77);
+}

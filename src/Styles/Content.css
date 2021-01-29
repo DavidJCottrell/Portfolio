@@ -1,0 +1,109 @@
+/* General section styles */
+.content {
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.content .section {
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	width: 70%;
+	max-width: 500px;
+	text-align: center;
+}
+
+/* Projects section */
+
+#Projects {
+	margin-top: 100px;
+}
+
+#Projects ul {
+	list-style: none;
+	text-align: center;
+}
+
+#Projects ul li {
+	padding: 10px;
+	font-size: calc(20px + 0.5vw);
+}
+
+
+.project-text {
+	display: inline-block;
+}
+
+
+  
+.project-text::after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background: white;
+	transition: 300ms;
+}
+
+.project-text:hover{
+    cursor: pointer;
+}
+
+.project-text:hover::after {
+	width: 100%;
+}
+
+.project-info {
+    opacity: 0;
+    transition: all .8s ease-in-out;
+    height: 0;
+}
+.expand{
+    height: 200px;
+    opacity: 1;
+}
+
+.project-info li{
+    font-size: calc(12px + 0.3vw) !important;
+}
+
+.project-info li:hover {
+    /* filter: brightness(1.2); */
+}
+
+
+/* Footer */
+
+div#Footer.Section {
+	width: 80%;
+    max-width: 500px;
+    text-align: center;
+	background-color: rgb(177, 177, 177);
+    border-radius: 25px;
+    display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.icon {
+    padding: 10px;
+}
+#git {
+    width: 500px !important;
+}
+.icon img {
+    width: 50px;
+}
+
+
+
+
+/* #profileImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	object-fit: cover;
+} */

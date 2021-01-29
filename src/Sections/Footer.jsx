@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import GitHubIcon from './assets/icons/GitHub.png';
-import LinkedInIcon from './assets/icons/LinkedIn.png';
+import GitHubIcon from '../assets/icons/GitHub.png';
+import LinkedInIcon from '../assets/icons/LinkedIn.png';
 
 class Footer extends Component {
     render() { 
         return ( 
             <ScrollAnimation animateIn="fadeInUp" animateOnce={true}  >
-                <div className="Section" id="Footer">
+                <div className="section" id="Footer">
                     <div className="icon">
                         <img src={ GitHubIcon } alt="" />
                     </div>

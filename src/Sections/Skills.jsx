@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Chart from './Chart';
+import Chart from '../Components/Chart';
 
 
 class Skills extends Component {
     state = {  }
     render() {
         return (
-            <div className="Section" id="Skills">
+            <div className="section" id="Skills">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}  >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0}  >
                     <h1>My Skills</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" delay={200} animateOnce={true} >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100}  >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" delay={400} animateOnce={true} >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={200}  >
                     <p style={{textAlign: "justify"}}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
                     </p>
@@ -25,7 +25,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" delay={400} animateOnce={true} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300}  >
                     <p style={{textAlign: "justify"}}>
                         Experianced with -
                     </p>
@@ -33,7 +33,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOnce={true} delay={600} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={400} >
                     <Chart />
                 </ScrollAnimation>
 

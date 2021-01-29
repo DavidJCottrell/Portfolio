@@ -11,11 +11,11 @@ class Projects extends Component {
         return (
             <div className="section" id="Projects">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0}  >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} offset={0} >
                     <h1>Projects</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100}  >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} offset={0} >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 
@@ -42,7 +42,7 @@ class Projects extends Component {
                             ]
                         }
                         id = {22}
-                        delay = {200}
+                        delay = {300}
                     />
 
                 </ul>

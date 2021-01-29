@@ -1,14 +1,19 @@
 /* General section styles */
 .content {
-    width: 100%;
-    padding-bottom: 1px;
+	width: 100%;
+	
+	/* Fixes sliding animation horizontal scroll bar bug  */
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-.content .section {
+.section {
 	margin-left: auto ;
 	margin-right: auto ;
-	margin-top: 200px;
-	margin-bottom: 200px;
+
+	margin-top: 300px;
+	margin-bottom: 300px;
+	
 	width: 70%;
 	max-width: 500px;
 	text-align: center;
@@ -16,9 +21,7 @@
 
 /* Projects section */
 
-#Projects {
-	margin-top: 100px;
-}
+
 
 #Projects ul {
 	list-style: none;
@@ -50,9 +53,13 @@
     cursor: pointer;
 }
 
-.project-text:hover::after {
-	width: 100%;
+@media (hover: hover) {
+    .project-text:hover::after {
+		width: 100%;
+	}
+	
 }
+
 
 .project-info {
     opacity: 0;
@@ -66,10 +73,6 @@
 
 .project-info li{
     font-size: calc(12px + 0.3vw) !important;
-}
-
-.project-info li:hover {
-    /* filter: brightness(1.2); */
 }
 
 
@@ -94,8 +97,11 @@ div#Footer.Section {
 .icon img {
     width: 50px;
 }
-
-
+/* 
+.container{
+	width: 400px;
+	height: 400px;
+} */
 
 
 /* #profileImg {

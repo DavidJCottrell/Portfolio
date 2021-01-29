@@ -9,15 +9,15 @@ class Skills extends Component {
         return (
             <div className="section" id="Skills">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0}  >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} offset={0} >
                     <h1>My Skills</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100}  >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} offset={0} >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={200}  >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={200} offset={0} >
                     <p style={{textAlign: "justify"}}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
                     </p>
@@ -25,7 +25,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300}  >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} offset={0} >
                     <p style={{textAlign: "justify"}}>
                         Experianced with -
                     </p>
@@ -33,7 +33,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={400} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={400} offset={0} >
                     <Chart />
                 </ScrollAnimation>
 

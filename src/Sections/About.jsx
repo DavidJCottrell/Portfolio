@@ -11,15 +11,15 @@ class About extends Component {
         return (
             <div className="section" id="About">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} offset={0} >
                     <h1>About Me</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} >
+                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} offset={0} >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={200} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={200} offset={0} >
                     <p style={{textAlign: "justify"}}>
                         I'm a second year Computer Science student at Birmingham City University, with a passion for learning new skills and technologies.
                         I am constantly experimenting with new languages and frameworks 
@@ -28,7 +28,7 @@ class About extends Component {
                 </ScrollAnimation>
                     <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} >
+                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} offset={0} >
                     <p style={{textAlign: "justify"}}>
                         I primarily enjoy building web applications in my free time as they allow me to combine my creativity and techincal skills within the same project.
                         as well as similar fields such as Electronics, with the aim of broadening my skill set.

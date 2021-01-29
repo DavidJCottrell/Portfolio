@@ -11,8 +11,6 @@ body, html{
   	height: 100%;
 	width: 100%;
 }
-
-
 p {
 	font-size: calc(12px + 0.3vw);
 }

@@ -36,12 +36,19 @@ class App extends Component {
 						<h1>David Cottrell</h1>
 					</ScrollAnimation>
 					
-					<ScrollAnimation animateIn='fadeInUp' duration={1} delay={750}>
+					<ScrollAnimation animateIn='fadeInUp' duration={1} delay={350}>
 						<p >Student at Birmingham City University</p>
+					</ScrollAnimation>
+
+					<ScrollAnimation animateIn='fadeInUp' duration={1} delay={350}>
+						<p >(Site In Development)</p>
 					</ScrollAnimation>
 				</header>
 				
-				<Wave />
+				<Wave 
+					amountX = {115}
+					amountY = {100}
+				/>
 
 				<br/>
 

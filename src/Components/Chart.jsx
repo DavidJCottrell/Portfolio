@@ -9,14 +9,14 @@ class Chart extends Component {
         this.data = {
             datasets: [{
                 data: [
-                    15,
-                    14,
-                    11,
-                    8,
-                    7,
-                    5,
-                    3,
-                    2
+                    15, //JavaScript
+                    14, //CSS
+                    11, //Java
+                    8, //PHP
+                    7, //Python
+                    5, //C/C++
+                    3, //Swift
+                    2 //F#
                 ],
                 backgroundColor: [
                     "#FF6384",

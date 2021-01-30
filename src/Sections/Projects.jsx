@@ -11,11 +11,11 @@ class Projects extends Component {
         return (
             <div className="section" id="Projects">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} offset={0} >
+                <ScrollAnimation animateIn="fadeInLeft" delay={0} offset={0} >
                     <h1>Projects</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} offset={0} >
+                <ScrollAnimation animateIn="fadeInRight" delay={100} offset={0} >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 

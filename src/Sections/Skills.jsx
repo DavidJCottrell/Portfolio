@@ -9,15 +9,15 @@ class Skills extends Component {
         return (
             <div className="section" id="Skills">
                 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={0} offset={0} >
+                <ScrollAnimation animateIn="fadeInLeft" delay={0} offset={0} >
                     <h1>My Skills</h1>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={100} offset={0} >
+                <ScrollAnimation animateIn="fadeInRight" delay={100} offset={0} >
                     <br/><hr/><br/>
                 </ScrollAnimation>
 
-                <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={200} offset={0} >
+                <ScrollAnimation animateIn="fadeInRight" delay={200} offset={0} >
                     <p>
                         Although most of experiance is currently with web development, I am very eager to learn more about low-level programming and Machine Learning.
                     </p>
@@ -25,7 +25,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} offset={0} >
+                <ScrollAnimation animateIn="fadeInLeft" delay={300} offset={0} >
                     <p>
                         Experianced with -
                     </p>
@@ -33,7 +33,7 @@ class Skills extends Component {
 
                 <br/>
 
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={400} offset={0} >
+                <ScrollAnimation animateIn="fadeInLeft" delay={400} offset={0} >
                     <Chart />
                 </ScrollAnimation>
 

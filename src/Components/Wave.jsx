@@ -5,22 +5,23 @@ const THREE = window.THREE;
 class Wave extends Component {
 
     componentDidMount() {
-        const SEPARATION = 60, AMOUNTX = 115, AMOUNTY = 70; //80 115 100
+        const SEPARATION = 60, AMOUNTX = 115, AMOUNTY = 70; //60 115 70
         let camera, scene, renderer;
         let particles, particle, count = 0;
-        let offsetX = 0, offsetY = -400; //-500
+        let offsetX = 0, offsetY = -400; //-400
         let windowOffset = 0;
-        // let windowHalfX = window.innerWidth / 2;
-        // let windowHalfY = window.innerHeight / 2;
       
+        //Check if on mobile
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             window.addEventListener( 'resize', onWindowResize, false );
             windowOffset = 20;
+        }else{
+            window.addEventListener("orientationchange", () => {window.location.reload()});
         }
 
         this.init = () => {
             camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 2000 );
-            camera.position.z = 1800; //1000
+            camera.position.z = 1800; //1800
             scene = new THREE.Scene();
             particles = [];
             var PI2 = Math.PI * 2;
@@ -49,23 +50,11 @@ class Wave extends Component {
             renderer = new THREE.CanvasRenderer();
 
             document.addEventListener( 'scroll', onScroll );
-            
-            window.addEventListener("orientationchange", onOrientationChange);
 
             if(this.props.sizeX == null || this.props.sizeY == null){
                 renderer.setSize(window.innerWidth - windowOffset, window.innerHeight);
             }else{
                 renderer.setSize(this.props.sizeX, this.props.sizeY);
-            }
-        }
-
-        function onOrientationChange(){
-            //Landscape
-            if(window.innerHeight > window.innerWidth){
-                //Bad bug with IOS and Chrome browser with orientation changes
-                window.location.reload();
-            }else{
-                window.location.reload();
             }
         }
 

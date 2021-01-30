@@ -56,7 +56,7 @@ class Project extends Component {
         const delay = this.props.delay;
 
         return (
-            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={delay} offset={0}  >
+            <ScrollAnimation animateIn="fadeInRight" delay={delay} offset={0}  >
                 <div className="project">
                     <li><span className="project-text" onClick={this.handleProjectClick}>{title}</span></li>
                     <ul className="animated project-info">

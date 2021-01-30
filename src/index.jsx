@@ -12,7 +12,7 @@ import Body from "./Body";
 import Projects from "./Sections/Projects";
 import About from "./Sections/About";
 import Skills from "./Sections/Skills";
-import Footer from "./Sections/Footer";
+import Footer from "./Footer";
 
 
 class App extends Component {
@@ -27,8 +27,6 @@ class App extends Component {
 
 	}
 
-
-    
 	render(){
 		return (
 			<React.Fragment>
@@ -46,8 +44,6 @@ class App extends Component {
 					amountX = {115}
 					amountY = {70}
 				/>
-
-				<br/>
 
 				<Body
 					about = {<About />}

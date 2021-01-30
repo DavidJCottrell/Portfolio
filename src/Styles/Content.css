@@ -1,12 +1,10 @@
 /* General section styles */
 .content {
 	width: 100%;
-	
 	/* Fixes sliding animation horizontal scroll bar bug  */
 	max-width: 100%;
 	overflow-x: hidden;
 }
-
 .section {
 	margin-left: auto ;
 	margin-right: auto ;
@@ -19,31 +17,23 @@
 	text-align: center;
 }
 
+/* About section */
 #About{
 	word-spacing: 10px;
 }
 
 /* Projects section */
-
-
-
 #Projects ul {
 	list-style: none;
 	text-align: center;
 }
-
 #Projects ul li {
 	padding: 10px;
 	font-size: calc(20px + 0.5vw);
 }
-
-
 .project-text {
 	display: inline-block;
-}
-
-
-  
+}  
 .project-text::after {
 	content: '';
 	width: 0px;
@@ -52,25 +42,21 @@
 	background: white;
 	transition: 300ms;
 }
-
 .project-info {
     opacity: 0;
     transition: all .8s ease-in-out;
     max-height: 0;
 }
-
 .expand{
     max-height: 500px;
     opacity: 1;
 }
-
 .project-info li{
     font-size: calc(12px + 0.3vw) !important;
 }
 
 
 /* Footer */
-
 #Footer {
 	background-color: rgb(226, 215, 215);
     border-radius: 25px;
@@ -79,7 +65,6 @@
 	margin-bottom: 100px;
 	max-width: 350px;
 }
-
 #Footer i {
 	color: black;
 	font-size: 45px;
@@ -88,6 +73,7 @@
 }
 
 
+/* Stop hover effects from happening on mobile (causes visual problems) */
 @media (hover: hover) {
 	.project-text:hover{
 		cursor: pointer;

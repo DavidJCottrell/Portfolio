@@ -9,6 +9,13 @@ header {
 	text-align: center;
 }
 
+@media only screen and (max-height: 375px) {
+	header {
+		/* 28 */
+		top: 20%;
+	}
+}
+
 header h1 {
 	font-size: calc(30px + 1.5vw);
 	font-weight: lighter;
@@ -17,4 +24,5 @@ header h1 {
 
 header p {
 	font-size: calc(12px + 0.5vw);
+	text-align: center;
 }

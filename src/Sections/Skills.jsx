@@ -18,15 +18,15 @@ class Skills extends Component {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" delay={200} offset={0} >
-                    <p style={{textAlign: "justify"}}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus quibusdam non sint nihil, voluptas culpa aut architecto veniam tempora sit earum iusto ipsum porro temporibus sed dolor eligendi unde!
+                    <p>
+                        Although most of experiance is currently with web development, I am very eager to learn more about low-level programming and Machine Learning.
                     </p>
                 </ScrollAnimation>
 
                 <br/>
 
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} offset={0} >
-                    <p style={{textAlign: "justify"}}>
+                    <p>
                         Experianced with -
                     </p>
                 </ScrollAnimation>

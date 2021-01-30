@@ -20,19 +20,22 @@ class About extends Component {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={200} offset={0} >
-                    <p style={{textAlign: "justify"}}>
-                        I'm a second year Computer Science student at Birmingham City University, with a passion for learning new skills and technologies.
-                        I am constantly experimenting with new languages and frameworks 
-                        as well as similar fields such as Electronics, with the aim of broadening my skill set.
+                    <p >
+                        I'm a second year Computer Science student at Birmingham City University, with a passion for learning new skills and developing interesting projects.
+                        I am constantly experimenting with new languages and technologies - enjoying the process of starting something new and adding to my skill set.
+                    </p>
+                    <br/>
+                    <p >
+                        Outside of Computer Programming, I have been heavily invested in music - having started playing Guitar and Bass at an early age and started playing in bands not long after.
+                        I find song writing with other musicians to be a great creative outlet and usually aim to find a Programming project that also allows for a similar amount of creativity. 
+                        
                     </p>
                 </ScrollAnimation>
                     <br/>
 
                 <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" delay={300} offset={0} >
                     <p style={{textAlign: "justify"}}>
-                        I primarily enjoy building web applications in my free time as they allow me to combine my creativity and techincal skills within the same project.
-                        as well as similar fields such as Electronics, with the aim of broadening my skill set.
-                        as well as similar fields such as Electronics, with the aim of broadening my skill set.
+                        For this reason, I primarily enjoy building web applications in my free time as they allow me to combine my creativity and techincal skills within the same project.
                     </p>
                 </ScrollAnimation>
 

@@ -28,13 +28,9 @@ class Project extends Component {
     handleProjectClick = (e) => {
         let projectTitle = e.target.parentElement.parentElement.getElementsByTagName("li")[0].getElementsByTagName("span")[0];
         
-        
-
         let info = e.target.parentElement.parentElement.getElementsByTagName("ul")[0];
 
         info.classList.toggle("expand");
-
-        console.log(this.shouldExpand)
 
         if(this.shouldExpand){
             info.classList.remove("fadeOutRight");
@@ -50,8 +46,6 @@ class Project extends Component {
             this.shouldExpand = true;
         }
 
-        
-        
     }
     
     render() {

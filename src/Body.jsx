@@ -7,10 +7,9 @@ class Body extends Component {
     render() {
         return (
             <div className="content">
-                {this.props.projects}
                 {this.props.about}
+                {this.props.projects}
                 {this.props.skills}
-
                 {this.props.footer}
             </div>
         );

@@ -19,6 +19,10 @@
 	text-align: center;
 }
 
+#About{
+	word-spacing: 10px;
+}
+
 /* Projects section */
 
 
@@ -49,25 +53,14 @@
 	transition: 300ms;
 }
 
-.project-text:hover{
-    cursor: pointer;
-}
-
-@media (hover: hover) {
-    .project-text:hover::after {
-		width: 100%;
-	}
-	
-}
-
-
 .project-info {
     opacity: 0;
     transition: all .8s ease-in-out;
-    height: 0;
+    max-height: 0;
 }
+
 .expand{
-    height: 200px;
+    max-height: 500px;
     opacity: 1;
 }
 
@@ -78,38 +71,32 @@
 
 /* Footer */
 
-div#Footer.Section {
-	width: 80%;
-    max-width: 500px;
-    text-align: center;
-	background-color: rgb(177, 177, 177);
+#Footer {
+	background-color: rgb(226, 215, 215);
     border-radius: 25px;
     display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	margin-bottom: 100px;
+	max-width: 350px;
 }
-.icon {
-    padding: 10px;
+
+#Footer i {
+	color: black;
+	font-size: 45px;
+	padding: 10px;
+	transition: 200ms;
 }
-#git {
-    width: 500px !important;
-}
-.icon img {
-    width: 50px;
-}
-/* 
-.container{
-	width: 400px;
-	height: 400px;
-} */
 
 
-/* #profileImg {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 125px;
-	height: 125px;
-	border-radius: 50%;
-	object-fit: cover;
-} */
+@media (hover: hover) {
+	.project-text:hover{
+		cursor: pointer;
+	}
+    .project-text:hover::after {
+		width: 100%;
+	}
+	#Footer i:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}

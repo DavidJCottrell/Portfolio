@@ -17,13 +17,14 @@ import Footer from "./Sections/Footer";
 
 class App extends Component {
 
-    componentDidMount(){
+    componentDidMount(){		
 		setTimeout(()=>{
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
-        }, 250);
+		}, 250); //250
+
 	}
 
 
@@ -39,22 +40,18 @@ class App extends Component {
 					<ScrollAnimation animateIn='fadeInUp' duration={1} delay={350}>
 						<p >Student at Birmingham City University</p>
 					</ScrollAnimation>
-
-					<ScrollAnimation animateIn='fadeInUp' duration={1} delay={350}>
-						<p >(Site In Development)</p>
-					</ScrollAnimation>
 				</header>
 				
 				<Wave 
 					amountX = {115}
-					amountY = {100}
+					amountY = {70}
 				/>
 
 				<br/>
 
 				<Body
-					projects = {<Projects />}
 					about = {<About />}
+					projects = {<Projects />}
                     skills = { <Skills /> }
                     footer = { <Footer /> }
 				/>

@@ -4,17 +4,11 @@ const THREE = window.THREE;
 
 class Wave extends Component {
 
-    constructor(props){
-        super(props);
-        this.amountX = props.amountX;
-        this.amountY = props.amountY;
-    }
-
     componentDidMount() {
-        const SEPARATION = 80, AMOUNTX = this.amountX, AMOUNTY = this.amountY; //80 115 100
+        const SEPARATION = 60, AMOUNTX = 115, AMOUNTY = 70; //80 115 100
         let camera, scene, renderer;
         let particles, particle, count = 0;
-        let offsetX = 0, offsetY = -500; //-500
+        let offsetX = 0, offsetY = -400; //-500
         let windowOffset = 0;
         // let windowHalfX = window.innerWidth / 2;
         // let windowHalfY = window.innerHeight / 2;
@@ -26,7 +20,7 @@ class Wave extends Component {
 
         this.init = () => {
             camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 2000 );
-            camera.position.z = 1000; //1000
+            camera.position.z = 1800; //1000
             scene = new THREE.Scene();
             particles = [];
             var PI2 = Math.PI * 2;
@@ -54,7 +48,9 @@ class Wave extends Component {
             }
             renderer = new THREE.CanvasRenderer();
 
-            //document.addEventListener( 'scroll', onScroll );
+            document.addEventListener( 'scroll', onScroll );
+            
+            window.addEventListener("orientationchange", onOrientationChange);
 
             if(this.props.sizeX == null || this.props.sizeY == null){
                 renderer.setSize(window.innerWidth - windowOffset, window.innerHeight);
@@ -63,23 +59,19 @@ class Wave extends Component {
             }
         }
 
-        // function onDocumentTouchStart(event) {
-        //     if (event.touches.length === 1) {
-        //       event.preventDefault();
-        //       offsetX = event.touches[ 0 ].pageX - windowHalfX;
-        //     }
-        // }
-      
-        // function onDocumentTouchMove( event ) {
-        //     if (event.touches.length === 1) {
-        //     event.preventDefault();
-        //     offsetX = event.touches[ 0 ].pageX;
-        //     }
-        // }
+        function onOrientationChange(){
+            //Landscape
+            if(window.innerHeight > window.innerWidth){
+                //Bad bug with IOS and Chrome browser with orientation changes
+                window.location.reload();
+            }else{
+                window.location.reload();
+            }
+        }
 
         function onScroll(){
             if(window.scrollY < 1000){
-                offsetY = -(window.scrollY+500);
+                offsetY = -(window.scrollY + 500);
             }
         }
 
@@ -114,6 +106,7 @@ class Wave extends Component {
         this.init();
         this.mount.appendChild( renderer.domElement );
         animate();
+
     }
 
     render() {

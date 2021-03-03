@@ -26,7 +26,7 @@ class Projects extends Component {
                             [
                                 <p key={10}>This is the website I developed for a private special-education school. This was my second professional project and the first large application I had built with modern web development tools.</p>,
                                 <p key={11}>As my employers essentially gave me complete creative freedom, I really enjoyed the creative element of this project.</p>,
-                                <a key={12} href="https://github.com/DavidJCottrell/WribbenhallReactApp" rel="noreferrer" target="_blank"> - View On GitHub</a>,
+                                <a key={12} href="https://github.com/WribbenhallSchool/WribbenhallSchool.github.io" rel="noreferrer" target="_blank"> - View On GitHub</a>,
                                 <a key={13} href="https://wribbenhallschool.co.uk/" rel="noreferrer" target="_blank"> - View Live Site</a> 
                             ]
                         }

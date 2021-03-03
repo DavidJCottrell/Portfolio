@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { v4 as uuidv4 } from 'uuid';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 HTMLElement.prototype.pseudoStyle = function(element,prop,value){
@@ -52,7 +52,6 @@ class Project extends Component {
 
         const title = this.props.title;
         let infoElements = this.props.infoElements;
-        const id = this.props.id;
         const delay = this.props.delay;
 
         return (
@@ -61,7 +60,7 @@ class Project extends Component {
                     <li><span className="project-text" onClick={this.handleProjectClick}>{title}</span></li>
                     <ul className="animated project-info">
                         {
-                            infoElements.map((element, i) => <li key={id + i} > {element} </li> )
+                            infoElements.map((element, i) => <li key={uuidv4()} > {element} </li> )
                         }
                     </ul>
                 </div>
